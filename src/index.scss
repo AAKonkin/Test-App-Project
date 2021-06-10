@@ -1,5 +1,9 @@
+@import "~bootstrap/scss/bootstrap";
+
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +14,20 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.item:hover {
+  background-color: black;
+  color: white;
+}
+
+.cardContainer {
+  padding: .5rem;
+  border: 1px solid black;
+  border-radius: 1%;
+}
+
+.btnHover:hover {
+  color: black;
+  background-color: white;
 }
