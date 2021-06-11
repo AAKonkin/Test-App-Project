@@ -10,3 +10,6 @@ export const FILTER_FIRSTNAME = 'FILTER_FIRSTNAME';
 export const FILTER_LASTNAME = 'FILTER_LASTNAME';
 export const FILTER_EMAIL = 'FILTER_EMAIL';
 export const FILTER_PHONE = 'FILTER_PHONE';
+//filter flag
+export const SET_FLAG = 'SET_FLAG';
+export const SET_FLAG_TYPE = 'SET_FLAG_TYPE';

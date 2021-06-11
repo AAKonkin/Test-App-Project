@@ -8,7 +8,9 @@ export const APIState = ({children}) => {
     const initialState = {
         items:[],
         loading: false,
-        add_form: false
+        add_form: false,
+        item_card: false,
+        flagType: ''
     }
     const [state, dispatch] = useReducer(apiReducer, initialState);
 
@@ -28,18 +30,18 @@ export const APIState = ({children}) => {
 
     //FILTER ACTIONS
     const filterVal = {
-        id: () => dispatch({type: type.FILTER_ID}),
-        firstName: () => dispatch({type: type.FILTER_FIRSTNAME}),
-        lastName: () => dispatch({type: type.FILTER_LASTNAME}),
-        email: () => dispatch({type: type.FILTER_EMAIL}),
-        phone: () => dispatch({type: type.FILTER_PHONE})
+        id: () => {dispatch({type: type.FILTER_ID}); dispatch({type: type.SET_FLAG_TYPE, setType: 'id'})},
+        firstName: () => {dispatch({type: type.FILTER_FIRSTNAME}); dispatch({type: type.SET_FLAG_TYPE, setType: 'firstName'})},
+        lastName: () => {dispatch({type: type.FILTER_LASTNAME}); dispatch({type: type.SET_FLAG_TYPE, setType: 'lastName'})},
+        email: () => {dispatch({type: type.FILTER_EMAIL}); dispatch({type: type.SET_FLAG_TYPE, setType: 'email'})},
+        phone: () => {dispatch({type: type.FILTER_PHONE}); dispatch({type: type.SET_FLAG_TYPE, setType: 'phone'})}
     }
 
     return (
         <ApiContext.Provider value={{showLoader, fetchData, addItem, 
             filterVal, showAddForm, showItemCard,
             loading: state.loading, items: state.items,
-            add_form: state.add_form}}>
+            add_form: state.add_form, item_card: state.item_card}}>
             {children}
         </ApiContext.Provider>
     )

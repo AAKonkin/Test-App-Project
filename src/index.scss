@@ -27,7 +27,38 @@ code {
   border-radius: 1%;
 }
 
+.cardItem {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+}
 .btnHover:hover {
   color: black;
   background-color: white;
+}
+
+.d-table{
+  display: table;
+  margin: 0 auto 5%;
+  width: 80%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+.d-tr{
+  display: table-row;
+  border: 1px solid black;
+  width: 100%;
+}
+.d-td{
+  display: table-cell;
+  text-align: center;
+  border: none;
+  vertical-align: middle;
+}
+.d-td:not(.no-p){
+  padding: 4px;
+}
+
+.hundredpers {
+  
 }

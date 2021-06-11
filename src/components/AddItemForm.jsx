@@ -7,12 +7,13 @@ export const AddItemForm = () => {
     const newItem = {
         
     }
+    
     return (<div className='cardContainer'>
         <div className="d-flex justify-content-end">
             <button onClick={() => showAddForm()} type="button" className="btn-close" aria-label="Close"></button>
         </div>
 
-        <form action="">
+        <form action="submit">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Firstname</label>
                 <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Enter your Name"/>
@@ -59,7 +60,8 @@ export const AddItemForm = () => {
         </form>
 
         <div className="d-flex justify-content-center">
-            <button onClick={() => addItem()} type="button" className="btn btn-dark btnHover">Add New Item</button>
+            <input className="btn btn-dark btnHover" type="submit" value="Add New Item"/>
+            {/* <button onClick={() => addItem()} type="button" className="btn btn-dark btnHover">Add New Item</button> */}
         </div>
         </div>
     )
