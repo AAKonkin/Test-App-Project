@@ -14,49 +14,7 @@ export const ItemsList = () => {
         <div className="d-td">{item.email}</div>
         <div className="d-td">{item.phone}</div>
     </div>
-    // <div className="d-tr">
-    //         {item_card ? <ItemCard firstName={item.firstName} lastName={item.lastName} description={item.description} address={item.address} /> : null}
-    // </div>
-    // <div className='item'>
-    //     <div onClick={() => showItemCard()} className="d-tr">
-    //         <div className="d-td">{item.id}</div>
-    //         <div className="d-td">{item.firstName}</div>
-    //         <div className="d-td">{item.lastName}</div>
-    //         <div className="d-td">{item.email}</div>
-    //         <div className="d-td">{item.phone}</div>
-    //     </div>
-    //     {/* <div className="d-tr">
-    //         {item_card ? <ItemCard firstName={item.firstName} lastName={item.lastName} description={item.description} address={item.address} /> : null}
-    //     </div> */}
-    // </div>
-    
-            // {/* <div onClick={() => showItemCard()} className="d-tr">
-            //         <div className="d-td" style={{width:'100px'}}>{item.id}</div>
-            //         <div className="d-td">{item.firstName}</div>
-            //         <div className="d-td">{item.lastName}</div>
-            //         <div className="d-td">{item.email}</div>
-            //         <div className="d-td">{item.phone}</div>
-            // </div> */}
-            //         {/* <div className="d-td">
-            //         {/* <tr onClick={() => showItemCard()} className='item'> */}
-            //             {/* <tr onClick={() => showItemCard()} className='item'>
-            //             <th scope="row">{item.id}</th>
-            //             <th>{item.firstName}</th>
-            //             <th>{item.lastName}</th>
-            //             <th>{item.email}</th>
-            //             <th>{item.phone}</th>
-            //             </tr>*/}
-            //             {/* <div className="d-table">
-            //                 <div onClick={() => showItemCard()} className="d-tr">
-            //                     <div className="d-td">{item.id}</div>
-            //                     <div className="d-td">{item.firstName}</div>
-            //                     <div className="d-td">{item.lastName}</div>
-            //                     <div className="d-td">{item.email}</div>
-            //                     <div className="d-td">{item.phone}</div>
-            //                 </div>
-            //             </div>
-            //         </div> */}
-    ))
+    ));
     
     return(<>
         <div className="d-table">
