@@ -1,7 +1,7 @@
 # Test App Project
 
-//This project published on GitHub Pages, [Click here for see!]()<br>
-DONT ACTIVE SRY //Or here (identical link) [https://aakonkin.github.io/]()<br>
+This project published on GitHub Pages, [Click here for see!](https://aakonkin.github.io/Test-App-Project/)<br>
+Or here (identical link) [https://aakonkin.github.io/Test-App-Project/](https://aakonkin.github.io/Test-App-Project/)<br>
 
 ## Test App Project
 Project based on practical learning and get new skills. <br>
